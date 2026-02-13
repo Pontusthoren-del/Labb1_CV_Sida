@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -24,10 +26,14 @@ h1 {
     align-items: center;
     font-size: 2.5rem;
     margin: 20px 0;
-    font-family:
-        Playfair Display,
-        serif;
+    font-family: "Playfair Display", serif;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .profil {
     display: flex;
     position: relative;
@@ -48,9 +54,6 @@ h1 {
     padding: 1em;
     border: #7c7c7c 1px;
     border-width: 5px 0px 5px 0px;
-    box-shadow:
-        0px 5px 0px,
-        0px -5px 0px;
     color: #747474;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     font-family:
@@ -73,6 +76,8 @@ h1 {
 .nav ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-right: 30px;
 }
 .nav ul li {
@@ -85,6 +90,11 @@ h1 {
     text-decoration: none;
     font-size: 1.4rem;
 }
+
+.nav ul li a.active {
+    color: #a5b4fc;
+}
+
 .nav li {
     transition: transform 0.3s ease;
     -webkit-transition: transform 0.3s ease;
@@ -118,15 +128,111 @@ main {
     border: #d0cdcd solid 1px;
     color: rgb(201, 201, 201);
     font-size: 1.2rem;
-    width: 40rem;
+    width: 90%;
+    max-width: 40rem;
     padding: 2em;
 }
-
 .info h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-decoration: dashed underline;
 }
+
+.cv-container {
+    width: 90%;
+    max-width: 62rem;
+    background-color: #1f2937;
+    border: #d0cdcd solid 1px;
+    color: rgb(201, 201, 201);
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: #d0cdcd solid 1px;
+    padding-bottom: 1rem;
+}
+
+.cv-header h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: rgb(201, 201, 201);
+    margin-bottom: 0.5rem;
+}
+
+.cv-header p {
+    font-size: 1rem;
+    color: #a5b4fc;
+}
+
+.cv-columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.cv-left {
+    flex: 1;
+    min-width: 0;
+    border-right: #d0cdcd solid 1px;
+    padding-right: 2rem;
+}
+
+.cv-right {
+    flex: 1;
+    min-width: 0;
+}
+
+.cv-section {
+    margin-bottom: 1.5rem;
+}
+
+.cv-section h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    color: #a5b4fc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: #d0cdcd solid 1px;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.cv-item {
+    margin-bottom: 1rem;
+}
+
+.cv-item h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(220, 220, 220);
+}
+
+.cv-item .year {
+    font-size: 0.85rem;
+    color: #a5b4fc;
+    margin-bottom: 0.2rem;
+}
+
+.cv-item p {
+    font-size: 0.9rem;
+    color: rgb(180, 180, 180);
+}
+
+.cv-skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cv-skills ul li {
+    font-size: 0.95rem;
+    padding: 0.2rem 0;
+    color: rgb(201, 201, 201);
+    border-bottom: #374151 solid 1px;
+}
+
 .cv-text {
     display: flex;
     justify-content: center;
@@ -135,32 +241,15 @@ main {
     margin-bottom: 2rem;
     color: rgb(201, 201, 201);
     background-color: #1f2937;
-    width: 60rem;
-    height: 5rem;
+    width: 90%;
+    max-width: 60rem;
+    height: auto;
     border: #d0cdcd solid 1px;
     padding: 1em;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
+    font-family: system-ui, sans-serif;
 }
-.pic-cv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    width: 62rem;
-    margin-bottom: 2rem;
-}
+
 footer {
     display: flex;
     justify-content: center;
@@ -185,18 +274,15 @@ a {
     visibility: hidden;
     transition: 0.3s ease;
 }
-
 .lightbox img {
     max-width: 500px;
     max-height: 90%;
     border-radius: 12px;
 }
-
 .lightbox:target {
     opacity: 1;
     visibility: visible;
 }
-
 .aboutme {
     display: flex;
     flex-direction: column;
@@ -204,7 +290,8 @@ a {
     align-items: center;
     background-color: #1f2937;
     color: rgb(201, 201, 201);
-    width: 40rem;
+    width: 90%;
+    max-width: 40rem;
     padding: 2em;
     border: #d0cdcd solid 1px;
 }
@@ -215,11 +302,18 @@ a {
     margin-bottom: 10px;
     text-decoration: dashed underline;
 }
+
 .portfolio {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio li {
+    display: flex;
 }
 
 .project {
@@ -253,7 +347,6 @@ a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
     transition: 0.25s;
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
@@ -282,11 +375,9 @@ a {
     align-items: center;
     z-index: 100;
 }
-
 .modal:target {
     display: flex;
 }
-
 .modal-content {
     position: relative;
     background: white;
@@ -296,7 +387,6 @@ a {
     width: 90%;
     text-align: center;
 }
-
 .close {
     position: absolute;
     top: 0.5rem;
@@ -305,16 +395,13 @@ a {
     font-size: 2rem;
     color: black;
 }
-
 .btn.github {
     background-color: #333;
     margin-top: 1rem;
 }
-
 .project h2 {
     margin-bottom: 0.5rem;
 }
-
 .head-info-projects {
     display: flex;
     justify-content: center;
@@ -325,34 +412,48 @@ a {
     border: #d0cdcd solid 1px;
     padding: 2rem;
 }
-
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #1f2937;
-    width: 20rem;
-    height: 20rem;
+    width: 90%;
+    max-width: 20rem;
+    height: auto;
     border: #d0cdcd solid 2px;
     padding: 2rem;
 }
-.contact ul{
+.contact ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin: 2rem;
     color: rgb(201, 201, 201);
-
 }
-.contact h2{
+.contact h2 {
     color: rgb(201, 201, 201);
 }
-.contact ul li{
+.contact ul li {
     display: flex;
-    padding: 0.25rem    ;
+    padding: 0.25rem;
 }
 .ref {
     color: rgb(201, 201, 201);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .cv-columns {
+        flex-direction: column;
+    }
+    .cv-left {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: #d0cdcd solid 1px;
+        padding-bottom: 1.5rem;
+    }
+    .nav ul li a {
+        font-size: 1rem;
+    }
 }
