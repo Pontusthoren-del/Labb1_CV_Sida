@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: beige;
+    background: linear-gradient(
+        90deg,
+        rgb(63, 66, 95) 0%,
+        rgb(166, 169, 197) 50%,
+        rgb(97, 106, 167) 100%
+    );
+    font-family: Merriweather, serif;
+}
+hr {
+    margin: 20px 0;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    font-family:
+        Playfair Display,
+        serif;
+}
+.profil {
+    display: flex;
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #374151;
+    border: #d0cdcd solid 1px;
+}
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #1f2937;
+    padding: 1em;
+    border: #7c7c7c 1px;
+    border-width: 5px 0px 5px 0px;
+    box-shadow:
+        0px 5px 0px,
+        0px -5px 0px;
+    color: #747474;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+.navbar-container {
+    width: 6rem;
+    height: 6rem;
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+.nav ul li {
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0 1em;
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.nav li {
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+.nav ul li:hover {
+    color: #d0cdcd;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    border: #d0cdcd solid 1px;
+    color: rgb(201, 201, 201);
+    font-size: 1.2rem;
+    width: 40rem;
+    padding: 2em;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-decoration: dashed underline;
+}
+.cv-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(201, 201, 201);
+    background-color: #1f2937;
+    width: 60rem;
+    height: 5rem;
+    border: #d0cdcd solid 1px;
+    padding: 1em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+.pic-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 62rem;
+    margin-bottom: 2rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: rgb(201, 201, 201);
+    padding: 1em;
+    font-size: 1.2rem;
+}
+a {
+    color: rgb(201, 201, 201);
+    text-decoration: underline;
+}
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.lightbox img {
+    max-width: 500px;
+    max-height: 90%;
+    border-radius: 12px;
+}
+
+.lightbox:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: rgb(201, 201, 201);
+    width: 40rem;
+    padding: 2em;
+    border: #d0cdcd solid 1px;
+}
+.aboutme h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-decoration: dashed underline;
+}
+.portfolio {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project img {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: #d0cdcd solid 1px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #374151;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    background-color: #1f2937;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+
+.btn.github {
+    background-color: #333;
+    margin-top: 1rem;
+}
+
+.project h2 {
+    margin-bottom: 0.5rem;
+}
+
+.head-info-projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    color: rgb(201, 201, 201);
+    background-color: #1f2937;
+    border: #d0cdcd solid 1px;
+    padding: 2rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    width: 20rem;
+    height: 20rem;
+    border: #d0cdcd solid 2px;
+    padding: 2rem;
+}
+.contact ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem;
+    color: rgb(201, 201, 201);
+
+}
+.contact h2{
+    color: rgb(201, 201, 201);
+}
+.contact ul li{
+    display: flex;
+    padding: 0.25rem    ;
+}
+.ref {
+    color: rgb(201, 201, 201);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
