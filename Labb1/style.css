@@ -11,9 +11,9 @@ body {
     background: beige;
     background: linear-gradient(
         90deg,
-        rgb(63, 66, 95) 0%,
-        rgb(166, 169, 197) 50%,
-        rgb(97, 106, 167) 100%
+        rgb(247, 197, 156) 0%,
+        rgb(241, 229, 198) 50%,
+        rgb(232, 229, 211) 100%
     );
     font-family:
         Playfair Display,
@@ -35,12 +35,14 @@ img {
 
 .profil {
     display: flex;
+    flex-direction: row;
+    margin-left: 20%;
     position: relative;
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     background-color: #374151;
-    border: #d0cdcd solid 1px;
+    box-shadow: 5px 5px 5px #1f2937ac;
 }
 .nav {
     position: fixed;
@@ -49,12 +51,11 @@ img {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 4.5rem;
-    background-color: #1f2937ac;
+    height: 6rem;
+    background-color: #cabd7294;
     border: #d0cdcda8;
     padding: 1em;
-    border-width: 5px 0px 5px 0px;
-    color: #747474;
+    color: #585858;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     font-family:
         Playfair Display,
@@ -77,13 +78,13 @@ img {
     margin: 0 1em;
 }
 .nav ul li a {
-    color: white;
+    color: rgb(84, 42, 42);
     text-decoration: none;
     font-size: 1.4rem;
 }
 
 .nav ul li a.active {
-    color: #a5b4fc;
+    color: #d99d43;
 }
 
 .nav li {
@@ -113,10 +114,10 @@ main {
 .info {
     display: flex;
     flex-wrap: wrap;
-    background-color: #1f2937ac;
+    background-color: #cabd7294;
     /*border: 1px solid #d0cdcda8;
     */
-    color: rgb(201, 201, 201);
+    color: rgb(7, 7, 7);
     font-size: 1.2rem;
     width: 90%;
     max-width: 40rem;
@@ -138,7 +139,7 @@ main {
 }
 
 .left {
-    border-right: 1px solid #d0cdcda8;
+    border-right: 1px solid #000000a8;
 }
 
 .left h2 {
@@ -165,9 +166,9 @@ main {
 .cv-container {
     width: 90%;
     max-width: 62rem;
-    background-color: #1f2937ac;
-    border: #d0cdcda8 solid 1px;
-    color: rgb(201, 201, 201);
+    background-color: #cabd7294;
+    border: rgb(84, 42, 42) solid 1px;
+    color: rgb(84, 42, 42);
     padding: 2rem;
     margin: 2rem 0;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -176,20 +177,20 @@ main {
 .cv-header {
     text-align: center;
     margin-bottom: 2rem;
-    border-bottom: #d0cdcd solid 1px;
+    border-bottom: rgb(84, 42, 42) solid 1px;
     padding-bottom: 1rem;
 }
 
 .cv-header h2 {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
-    color: rgb(201, 201, 201);
+    color: rgb(84, 42, 42);
     margin-bottom: 0.5rem;
 }
 
 .cv-header p {
     font-size: 1rem;
-    color: #a5b4fc;
+    color: rgb(84, 42, 42);
 }
 
 .cv-columns {
@@ -200,7 +201,7 @@ main {
 .cv-left {
     flex: 1;
     min-width: 0;
-    border-right: #d0cdcd solid 1px;
+    border-right: rgb(84, 42, 42) solid 1px;
     padding-right: 2rem;
 }
 
@@ -216,10 +217,10 @@ main {
 .cv-section h3 {
     font-family: "Playfair Display", serif;
     font-size: 1.1rem;
-    color: #a5b4fc;
+    color: rgb(84, 42, 42);
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: #d0cdcd solid 1px;
+    border-bottom: rgb(84, 42, 42) solid 1px;
     padding-bottom: 0.3rem;
     margin-bottom: 0.8rem;
 }
@@ -231,18 +232,18 @@ main {
 .cv-item h4 {
     font-size: 1rem;
     font-weight: bold;
-    color: rgb(220, 220, 220);
+    color: rgb(0, 0, 0);
 }
 
 .cv-item .year {
     font-size: 0.85rem;
-    color: #a5b4fc;
+    color: rgb(84, 42, 42);
     margin-bottom: 0.2rem;
 }
 
 .cv-item p {
     font-size: 0.9rem;
-    color: rgb(180, 180, 180);
+    color: rgb(0, 0, 0);
 }
 
 .cv-skills ul {
@@ -253,8 +254,8 @@ main {
 .cv-skills ul li {
     font-size: 0.95rem;
     padding: 0.2rem 0;
-    color: rgb(201, 201, 201);
-    border-bottom: #374151 solid 1px;
+    color: rgb(0, 0, 0);
+    border-bottom: rgb(84, 42, 42) solid 1px;
 }
 
 .cv-text {
@@ -263,8 +264,8 @@ main {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color: rgb(201, 201, 201);
-    background-color: #1f2937ac;
+    color: rgb(0, 0, 0);
+    background-color: #cabd7294;
     /* border: #d0cdcda8 solid 1px; */
     width: 90%;
     max-width: 60rem;
@@ -284,13 +285,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1f2937;
-    color: rgb(201, 201, 201);
+    background-color: #cabd7294;
+    color: rgb(84, 42, 42);
     padding: 1em;
     font-size: 1.2rem;
 }
 a {
-    color: rgb(201, 201, 201);
+    color: rgb(84, 42, 42);
     text-decoration: underline;
 }
 .lightbox {
@@ -318,13 +319,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1f2937ac;
-    color: rgb(201, 201, 201);
+    background-color: #cabd7294;
+    color: rgb(84, 42, 42);
     width: 90%;
     max-width: 40rem;
     padding: 2em;
-    /*border: #d0cdcda8 solid 1px;
-    */
+    /*border: #d0cdcda8 solid 1px; */
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
     border-radius: 10%;
     -webkit-border-radius: 10%;
@@ -380,8 +380,8 @@ a {
     justify-content: center;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #374151;
-    color: white;
+    background-color: #cabd7294;
+    color: rgb(84, 42, 42);
     text-decoration: none;
     border-radius: 5px;
     transition: 0.25s;
@@ -433,7 +433,7 @@ a {
     color: black;
 }
 .btn.github {
-    background-color: #333;
+    background-color: #e7b82c;
     margin-top: 1rem;
 }
 .project h2 {
@@ -444,8 +444,8 @@ a {
     justify-content: center;
     width: 100%;
     margin-bottom: 5rem;
-    color: rgb(201, 201, 201);
-    background-color: #1f2937ac;
+    color: rgb(84, 42, 42);
+    background-color: #cabd7294;
     /* border: #d0cdcda8 solid 1px; */
     padding: 2rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
@@ -462,7 +462,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1f2937ac;
+    background-color: #cabd7294;
     /* border: #d0cdcda8 solid 1px; */
     width: 90%;
     max-width: 20rem;
@@ -481,17 +481,17 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 2rem;
-    color: rgb(201, 201, 201);
+    color: rgb(84, 42, 42);
 }
 .contact h2 {
-    color: rgb(201, 201, 201);
+    color: rgb(84, 42, 42);
 }
 .contact ul li {
     display: flex;
     padding: 0.25rem;
 }
 .ref {
-    color: rgb(201, 201, 201);
+    color: rgb(84, 42, 42);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -502,7 +502,7 @@ a {
     .cv-left {
         border-right: none;
         padding-right: 0;
-        border-bottom: #d0cdcd solid 1px;
+        border-bottom: #000000 solid 1px;
         padding-bottom: 1.5rem;
     }
     .nav ul li a {
@@ -511,7 +511,7 @@ a {
 }
 
 .last-info-right {
-    border-top: #d0cdcd solid 1px;
+    border-top: #000000 solid 1px;
     margin-top: 1rem;
     padding-top: 1.5rem;
 }
@@ -520,17 +520,14 @@ a {
     margin-top: 1rem;
 }
 .about-me-first {
-    border-bottom: #d0cdcd solid 1px;
+    border-bottom: #030303 solid 1px;
     padding: 1rem;
 }
 .about-me-middle {
     padding: 1rem;
-    border-bottom: #d0cdcd solid 1px;
+    border-bottom: #000000 solid 1px;
 }
 .about-me-last {
     padding: 1rem;
-    border-bottom: #d0cdcd dashed 1px;
-}
-.full-portfolio-collection{
-    margin-bottom: 20rem;
+    border-bottom: #000000 dashed 1px;
 }
