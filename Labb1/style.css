@@ -95,12 +95,14 @@ img {
     -o-transition: transform 0.3s ease;
 }
 .nav ul li:hover {
-    color: #d0cdcd;
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
+}
+.nav ul li:hover a {
+    color: rgb(144, 96, 1);
 }
 main {
     min-height: 100vh;
@@ -392,7 +394,7 @@ a {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
-    background-color: #1f2937;
+    background-color: #e7c42c;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -417,7 +419,7 @@ a {
 }
 .modal-content {
     position: relative;
-    background: white;
+    background: rgb(253, 253, 253);
     padding: 2rem;
     border-radius: 10px;
     max-width: 500px;
