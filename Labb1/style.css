@@ -467,7 +467,7 @@ a {
     background-color: #cabd7294;
     /* border: #d0cdcda8 solid 1px; */
     width: 90%;
-    max-width: 20rem;
+    max-width: 35rem;
     height: auto;
     padding: 2rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
@@ -477,6 +477,7 @@ a {
     -ms-border-radius: 20%;
     -o-border-radius: 20%;
     margin-bottom: 20rem;
+    font-size: 1.4rem;
 }
 .contact ul {
     display: flex;

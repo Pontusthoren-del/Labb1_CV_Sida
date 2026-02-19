@@ -14,7 +14,7 @@
     <body>
         <div class="headliner">
             <header>
-                <h1>CV</h1>
+                <!-- <h1>CV</h1> -->
                 <nav class="nav">
                     <a href="#profileZoom">
                         <img
@@ -46,30 +46,35 @@
                 <div class="cv-container">
                     <div class="cv-header">
                         <h2>Pontus Thorén</h2>
-                        <p>Varberg &mdash; pontus_thoren@hotmail.com &mdash; 070-8663204</p>
+                        <p>
+                            Varberg &mdash; pontus_thoren@hotmail.com &mdash;
+                            070-8663204
+                        </p>
                     </div>
                     <div class="cv-columns">
                         <div class="cv-left">
+                            <!-- Utbildning (fylls av JS) -->
                             <div class="cv-section">
                                 <h3>Utbildning</h3>
-                                <div class="cv-item">
-                                    <h4>Systemutvecklare</h4>
-                                    <p class="year">2024 – pågående</p>
-                                    <p>YH-utbildning inom systemutveckling</p>
-                                </div>
+                                <div id="education"></div>
                             </div>
+
+                            <!-- Arbetslivserfarenhet (fylls av JS) -->
                             <div class="cv-section">
                                 <h3>Arbetslivserfarenhet</h3>
-                                <div class="cv-item">
-                                    <h4>Restaurangchef</h4>
-                                    <p class="year">2008 – 2024</p>
-                                    <p>16 års erfarenhet inom restaurangbranschen med ledande roller som bar- och restaurangchef.</p>
-                                </div>
+                                <div id="experience"></div>
                             </div>
+
+                            <!-- Denna kan vara kvar om den inte ska in i JSON -->
                             <div class="cv-section">
                                 <h3>Ledarskap</h3>
                                 <div class="cv-item">
-                                    <p>Personalansvar, schemaläggning, ekonomisk uppföljning och verksamhetsutveckling i miljöer med högt tempo.</p>
+                                    <p>
+                                        Personalansvar, schemaläggning,
+                                        ekonomisk uppföljning och
+                                        verksamhetsutveckling i miljöer med högt
+                                        tempo.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -105,10 +110,18 @@
                                 <h3>Kontakt</h3>
                                 <div class="cv-item">
                                     <p>
-                                        <a href="https://www.linkedin.com/in/pontus-thor%C3%A9n-031947b7/" target="_blank">LinkedIn</a>
+                                        <a
+                                            href="https://www.linkedin.com/in/pontus-thor%C3%A9n-031947b7/"
+                                            target="_blank"
+                                            >LinkedIn</a
+                                        >
                                     </p>
                                     <p>
-                                        <a href="https://github.com/Pontusthoren-del" target="_blank">GitHub</a>
+                                        <a
+                                            href="https://github.com/Pontusthoren-del"
+                                            target="_blank"
+                                            >GitHub</a
+                                        >
                                     </p>
                                 </div>
                             </div>
@@ -127,5 +140,6 @@
                 >
             </p>
         </footer>
+        <script src="cv.js"></script>
     </body>
 </html>
