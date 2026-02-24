@@ -118,7 +118,7 @@ main {
     flex-wrap: wrap;
     background-color: #cabd7294;
     /*border: 1px solid #d0cdcda8;
-    */
+        */
     color: rgb(7, 7, 7);
     font-size: 1.2rem;
     width: 90%;
@@ -533,4 +533,41 @@ a {
 .about-me-last {
     padding: 1rem;
     border-bottom: #000000 dashed 1px;
+}
+#easter-egg-dot {
+    cursor: pointer;
+    color: black;
+    font-size: 2.5rem;
+}
+.modal-content {
+    background-color: #cabd72;
+}
+.modal-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+#easter-egg-modal button {
+    background-color: rgb(255, 182, 35);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
+#easter-egg-modal button:hover {
+    background-color: rgb(206, 117, 0);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
