@@ -109,9 +109,9 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    padding-top: 5rem;
+    justify-content: center;
+    padding-top: 10rem;
 }
 .info {
     display: flex;
@@ -358,7 +358,7 @@ a {
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     margin-bottom: 2rem;
@@ -570,4 +570,79 @@ a {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+}
+.loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.loading::after {
+    content: "";
+    display: block;
+    margin: 1rem auto;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ccc;
+    border-top: 4px solid #000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.headline-github {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 35rem;
+    margin: 0 auto 2rem auto;
+    background-color: #cabd7294;
+    padding: 2rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+#github-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #cabd7294;
+    margin: 0 auto 2rem auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    padding: 2rem;
+    list-style: none;
+}
+
+#github-projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* width: 200px; */
+    min-height: 180px;
+}
+
+#github-projects p {
+    flex-grow: 1;
+    margin: 0.5rem 0;
+}
+.btn.github{
+    background-color: #f5e078;
+
+}
+.btn.github:hover{
+        background-color: #f6de66;
 }

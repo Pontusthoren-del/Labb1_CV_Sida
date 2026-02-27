@@ -6,13 +6,13 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <div id="profileZoom" class="lightbox">
-        <a href="#">
-            <img src="../images/profilbild.webp" alt="" />
-        </a>
-    </div>
     <body>
         <div class="headliner">
+            <div id="profileZoom" class="lightbox">
+                <a href="#">
+                    <img src="../images/profilbild.webp" alt="" />
+                </a>
+            </div>
             <header>
                 <!-- <h1>Portfolio</h1> -->
                 <nav class="nav">
@@ -41,8 +41,8 @@
         <main>
             <section class="full-portfolio-collection">
                 <h2 class="head-info-projects">
-                    Här är en liten samling av några av mina projekt som jag
-                    gjort.
+                    Här är en liten samling av de projekten som jag
+                    är mest nöjd med.
                 </h2>
 
                 <ul class="portfolio">
@@ -77,6 +77,9 @@
                         </div>
                     </li>
                 </ul>
+                <h2 class="headline-github">Alla GitHub-Projekt</h2>
+                <div id="loading" class="loading">Laddar projekt...</div>
+                <ul id="github-projects" class="portfolio"></ul>
 
                 <div id="project1Modal" class="modal">
                     <div class="modal-content">
@@ -147,6 +150,7 @@
                 <button id="close-modal">Stäng</button>
             </div>
         </div>
+        <script src="../github-projects.js"></script>
         <script src="../easter-egg-keyboard.js"></script>
         <script src="../easter-egg-dot.js"></script>
     </body>
