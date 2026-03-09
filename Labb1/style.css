@@ -45,7 +45,7 @@ img {
     box-shadow: 5px 5px 5px #1f2937ac;
 }
 .nav {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -291,6 +291,28 @@ footer {
     color: rgb(84, 42, 42);
     padding: 1em;
     font-size: 1.2rem;
+    border-top: #000 solid 1px;
+}
+.top-footer {
+    display: inline;
+    padding: 0.5rem;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 2rem;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    background-color: rgb(219, 190, 121);
+}
+.top-footer:hover {
+    background-color: #deb521;
 }
 a {
     color: rgb(84, 42, 42);
@@ -444,8 +466,9 @@ a {
 .head-info-projects {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 5rem;
+    /* width: 100%; */
+    max-width: 60rem;
+    margin: 0 auto 5rem auto;
     color: rgb(84, 42, 42);
     background-color: #cabd7294;
     /* border: #d0cdcda8 solid 1px; */
@@ -614,16 +637,13 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
     background-color: #cabd7294;
     margin: 0 auto 2rem auto;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
     border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
-    padding: 2rem;
-    list-style: none;
+    padding: 3rem;
+    max-width: 900px;
 }
 
 #github-projects .project {
@@ -631,18 +651,35 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* width: 200px; */
-    min-height: 180px;
+    width: 220px;
+    gap: 0.5rem;
 }
 
 #github-projects p {
     flex-grow: 1;
     margin: 0.5rem 0;
 }
-.btn.github{
-    background-color: #f5e078;
-
+#github-projects .project h2 {
+    font-size: 1.2rem;
+    word-break: break-word;
+    width: 100%;
 }
-.btn.github:hover{
-        background-color: #f6de66;
+.btn.github {
+    background-color: #f5e078;
+}
+.btn.github:hover {
+    background-color: #f6de66;
+}
+@media (max-width: 600px) {
+    #github-projects .project {
+        width: 100%;
+    }
+    #github-projects {
+        border-radius: 5%;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
+        padding: 1.5rem;
+    }
 }
